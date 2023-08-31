@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <!-- LOGO -->
+                    <img src="https://via.placeholder.com/30" alt="Logo" class="d-inline-block align-text-top">
+                    Bootstrap
+                </a>
+                <!-- MENU -->
+                <ul class="nav justify-content-end" id="menu-principal">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Seccion 1</a> <!-- ************** -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Seccion 2</a> <!-- ************** -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- CARRUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- imagenes -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1000x200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1000x200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1000x200" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <!-- controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="container">
+        <!-- SECCION 1 -->
+        <section class="my-2" id="seccion1">
+            <h2>Seccion 1</h2>
+            <div class="card-group">
+                <div class="card bg-success bg-gradient">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card bg-primary bg-gradient">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text" id="card-modificar">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body bg-success bg-gradient">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height
+                            action.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- SECCION 2 -->
+            <div class="row" id="seccion2">
+                <h2>Seccion 2</h2>
+                <div class="col-sm-6 col-md-8"> <!-- seccion -->
+                    <div class="card bg-primary bg-gradient">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <img src="https://via.placeholder.com/100" class="col-md-4 float-md-start mx-3" alt="...">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a tenetur aspernatur corporis illum quibusdam impedit! Labore aliquam deleniti autem. Saepe error laborum iste dicta incidunt tempora consequuntur voluptates ut.</p>
+                        </div>
+                    </div>
+                    <div class="card  bg-success bg-gradient">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <img src="https://via.placeholder.com/100" class="col-md-4 float-md-end mx-3" alt="...">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a tenetur aspernatur corporis illum quibusdam impedit! Labore aliquam deleniti autem. Saepe error laborum iste dicta incidunt tempora consequuntur voluptates ut.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-primary bg-gradient">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <img src="https://via.placeholder.com/100" class="col-md-4 float-md-start mx-3" alt="...">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro a tenetur aspernatur corporis illum quibusdam impedit! Labore aliquam deleniti autem. Saepe error laborum iste dicta incidunt tempora consequuntur voluptates ut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center"> <!-- aside -->
+                    <div class="card">
+                        <div class="card bg-dark text-bg-dark">
+                            <img src="https://via.placeholder.com/100" class="card-img-top rounded mx-auto" style="max-width: 100px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a prueba="esto es una prueba" href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-bg-dark">
+                            <img src="https://via.placeholder.com/100" class="card-img-top rounded mx-auto" style="max-width: 100px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-bg-dark">
+                            <img src="https://via.placeholder.com/100" class="card-img-top rounded mx-auto" style="max-width: 100px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#seccion3" class="btn btn-primary"  id="operacion">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <nav class="navbar bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-text-top">
+                </a>
+                <!-- texto -->
+                <div class="text-center bg-transparent text-bg-dark">
+                    <ul>
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                    </ul>
+                  </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+		<script src="ejercicio9.js"></script>
+</body>
+
+</html>
